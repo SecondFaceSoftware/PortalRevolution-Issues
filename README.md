@@ -4,6 +4,8 @@ This is the issue tracker for Portal: Revolution. If you believe you found a bug
 
 Keep in mind that we probably won't fix smaller issues and don't have the resources to continuously update this mod.
 
+> **For Playtesters:** DON'T report bugs here! Use our internal trackers. This repository is public!
+
 ## Reporting a bug
 
 Before you report a bug please:
