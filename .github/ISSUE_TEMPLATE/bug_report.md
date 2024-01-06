@@ -4,27 +4,47 @@ about: Create a report to help us improve
 title: ''
 labels: bug
 assignees: ''
-
----
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: 
- - GPU name: 
- - CPU name: 
- - RAM (Quantity + Spec):
+body:
+- type: textarea
+    attributes:
+        label: Describe the bug
+        description: A clear and concise description of what the bug is.
+        placeholder: |
+            Feature X is experiencing problem Y.
+    validations:
+        required: true
+- type: textarea
+    attributes:
+        label: To Reproduce
+        description: Steps to reproduce the behavior
+        placeholder: |
+            1. Go to '...'
+            2. Click on '....'
+            3. Scroll down to '....'
+            4. See error
+    validations:
+        required: true
+- type: textarea
+    attributes:
+        label: Expected behavior
+        description: A clear and concise description of what you expected to happen.
+    validations:
+        required: true
+- type: textarea
+    attributes:
+        label: Screenshots
+        description: |
+            If applicable, add screenshots or videos to help explain your problem.
+            Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+- type: textarea
+    attributes:
+        label: Desktop
+        description: |
+            Please enter your Operating System, GPU, CPU, and RAM specifications, if known.
+        placeholder: |
+            OS: Windows 11
+            GPU name: NVIDIA GeForce GTX 750
+            CPU name: Intel Core i3-8300
+            RAM (Quantity + Spec): 8 GB DDR4 2133Mhz RAM
+    validations:
+        required: true
