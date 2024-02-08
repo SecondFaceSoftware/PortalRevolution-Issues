@@ -4,6 +4,14 @@ labels: [bug]
 body:
 - type: textarea
   attributes:
+    label: Game Version
+    description: Visible on the bottom left in the game menu
+    placeholder: |
+      Version 1.1.0
+  validations:
+    required: true
+- type: textarea
+  attributes:
     label: Describe the bug
     description: A clear and concise description of what the bug is.
     placeholder: |
